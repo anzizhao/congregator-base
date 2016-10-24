@@ -10,7 +10,7 @@ function Congregator (options) {
     this.handleEntry = options.handleEntry;
     this.getSources = options.getSources;
     this.waitTime = options.waitTime || 10000;
-    this.timeOut = options.timeOut || 10000;
+    this.timeout = options.timeout || 10000;
 
     var agent = new http.Agent(); // http agent
     agent.maxSockets = options.sockets || 5;
@@ -36,7 +36,7 @@ Congregator.prototype.run = require('./lib/run')();
 
 Congregator.prototype.finishRunMsg = function(){
     // interface  should be rewrite for the inherit
-    return '**Congregator- done waiting - commensing new fetch..............**'.blue
+    return '**Congregator- done waiting - commensing new fetch..............**'.blue;
 } 
 
 exports = module.exports = Congregator;
