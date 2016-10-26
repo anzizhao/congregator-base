@@ -8,6 +8,10 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/anzizhao/congregator-base.git"
+  },
   "dependencies": {
     "async": "^2.1.2",
     "cheerio": "^0.22.0",
