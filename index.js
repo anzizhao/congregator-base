@@ -11,7 +11,7 @@ function Congregator (options) {
     this.getSources = options.getSources;
     this.waitTime = options.waitTime || 10000;
     this.timeout = options.timeout || 10000;
-    this.imageServer = options.imageServer || null,
+    this.imageServer = options.imageServer || null;
 
     var agent = new http.Agent(); // http agent
     agent.maxSockets = options.sockets || 5;
