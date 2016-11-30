@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "orig": "find .  -maxdepth 6  -name '*.orig'  -type f | xargs rm -f ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
